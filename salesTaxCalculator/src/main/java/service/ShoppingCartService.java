@@ -16,4 +16,8 @@ public class ShoppingCartService {
         return receipt;
     }
 
+    public String printReceipt(List<BaseSaleItem> items) {
+        return generateReceipt(items).toString();
+    }
+
 }
